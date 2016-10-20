@@ -3,7 +3,8 @@ module Api
     class CatsController < ApplicationController
 
       def index
-        render json: Cat.all
+        # render json: Cat.all, include: ['hobbies']
+        render json: Cat.includes(:hobbies), include: ['hobbies']
       end
 
     end
