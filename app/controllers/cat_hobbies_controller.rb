@@ -1,2 +1,0 @@
-class CatHobbiesController < ApplicationController
-end
